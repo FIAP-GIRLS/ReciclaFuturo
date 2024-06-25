@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReciclaFuturo", "ReciclaFuturo.csproj", "{DBAC0EF7-F705-4A72-A277-5247AB361D8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAC0EF7-F705-4A72-A277-5247AB361D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAC0EF7-F705-4A72-A277-5247AB361D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAC0EF7-F705-4A72-A277-5247AB361D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAC0EF7-F705-4A72-A277-5247AB361D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C04374D8-DBC6-422B-941B-C466F5880FAB}
+	EndGlobalSection
+EndGlobal
