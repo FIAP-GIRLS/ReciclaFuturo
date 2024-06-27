@@ -12,7 +12,7 @@ namespace ReciclaFuturo.Models
         public int? Cep { get; set; }
         public string? Cidade { get; set; }
         public string? Estado { get; set; }
-        public string? complemento { get; set; }
+        public string? Complemento { get; set; }
 
 
     }

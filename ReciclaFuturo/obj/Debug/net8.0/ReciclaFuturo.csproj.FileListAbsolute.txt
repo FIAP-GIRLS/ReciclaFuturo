@@ -111,3 +111,5 @@ S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\runtimes\osx\lib\net8.0\Syst
 S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
 S:\Dev\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\ReciclaFuturo.csproj.AssemblyReference.cache
 S:\Dev\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\ReciclaF.D53E4CFC.Up2Date
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Castle.Core.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

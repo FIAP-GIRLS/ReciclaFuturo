@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Migrations\\20240627183130_AddTabelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627183130_AddTabelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\views\\morador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:views\\morador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\controllers\\moradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:controllers\\moradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\data\\contexts\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:data\\contexts\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\views\\morador\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:views\\morador\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240627183130_AddTabelas.cs",
-              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Migrations\\20240627183130_AddTabelas.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240627183130_AddTabelas.cs",
-              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Migrations\\20240627183130_AddTabelas.cs",
-              "RelativeToolTip": "Migrations\\20240627183130_AddTabelas.cs",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Views\\Morador\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Morador\\Detail.cshtml",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Views\\Morador\\Detail.cshtml",
+              "RelativeToolTip": "Views\\Morador\\Detail.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T18:31:30.644Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T19:41:36.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Views\\Morador\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Morador\\Edit.cshtml",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Views\\Morador\\Edit.cshtml*",
+              "RelativeToolTip": "Views\\Morador\\Edit.cshtml*",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T19:41:25.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Data\\Contexts\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "Data\\Contexts\\DatabaseContext.cs",
               "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Data\\Contexts\\DatabaseContext.cs",
               "RelativeToolTip": "Data\\Contexts\\DatabaseContext.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAuwGcAAAAJAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwCQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T16:25:32.379Z",
+              "WhenOpened": "2024-06-27T19:35:26.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MoradorController.cs",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Controllers\\MoradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MoradorController.cs",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Controllers\\MoradorController.cs*",
+              "RelativeToolTip": "Controllers\\MoradorController.cs*",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAIwD4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T19:08:35.652Z",
               "EditorCaption": ""
             }
           ]

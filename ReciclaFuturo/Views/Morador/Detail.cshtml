@@ -1,0 +1,16 @@
+﻿@model ReciclaFuturo.Models.MoradorModel
+
+<h1>Detalhes do Morador</h1>
+
+<div>
+    <h4>Nome: @Model.Nome</h4>
+    <h4>CPF: @Model.Cpf</h4>
+    <h4>Email: @Model.Email</h4>
+    <h4>Contato: @Model.ContatoNr</h4>
+    <h4>Endereço: @Model.Endereco.NomeEndereco, @Model.Endereco.NumeroEndereco, @Model.Endereco.Complemento - @Model.Endereco.Cidade/@Model.Endereco.Estado</h4>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.MoradorId">Editar</a> |
+    <a asp-action="Index">Voltar para a lista</a>
+</p>
