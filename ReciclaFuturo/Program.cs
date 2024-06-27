@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 #region IMPORTAÇÃO REFERENTE AO BANCO DE DADOS
 using ReciclaFuturo.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
-using ReciclaFuturo.Data.Contexts;
+using ReciclaFuturo.Services;
 #endregion
 var builder = WebApplication.CreateBuilder(args);
 #region INICIALIZANDO O BANCO DE DADOS
@@ -14,6 +14,10 @@ builder.Services.AddDbContext<DatabaseContext>(
 #endregion
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<InterfaceMoradorService, MoradorService>();
+builder.Services.AddScoped<InterfaceAgendamentoService, AgendamentoService>();
+
 
 // var builder = WebApplication.CreateBuilder(args);
 
