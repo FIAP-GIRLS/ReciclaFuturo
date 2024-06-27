@@ -10,8 +10,5 @@
         public string? senha { get; set; }
         public string? ContatoNr { get; set; }
 
-        public int EnderecoId { get; set; }
-        public EnderecoModel? Endereco { get; set; }
-
     }
 }

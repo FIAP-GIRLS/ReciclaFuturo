@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\models\\enderecomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:models\\enderecomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\models\\residuomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:models\\residuomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\models\\agendamentomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:models\\agendamentomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|s:\\dev\\reciclafuturo\\reciclafuturo\\models\\moradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBAC0EF7-F705-4A72-A277-5247AB361D8E}|ReciclaFuturo.csproj|solutionrelative:models\\moradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResiduoModel.cs",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\ResiduoModel.cs",
+              "RelativeDocumentMoniker": "Models\\ResiduoModel.cs",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\ResiduoModel.cs",
+              "RelativeToolTip": "Models\\ResiduoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T16:00:10.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgendamentoModel.cs",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\AgendamentoModel.cs",
+              "RelativeDocumentMoniker": "Models\\AgendamentoModel.cs",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\AgendamentoModel.cs",
+              "RelativeToolTip": "Models\\AgendamentoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:56:46.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnderecoModel.cs",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\EnderecoModel.cs",
+              "RelativeDocumentMoniker": "Models\\EnderecoModel.cs",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\EnderecoModel.cs",
+              "RelativeToolTip": "Models\\EnderecoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:49:50.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoradorModel.cs",
+              "DocumentMoniker": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\MoradorModel.cs",
+              "RelativeDocumentMoniker": "Models\\MoradorModel.cs",
+              "ToolTip": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\Models\\MoradorModel.cs",
+              "RelativeToolTip": "Models\\MoradorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:39:21.391Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
