@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
+    "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
   },
   "projects": {
-    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
+    "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "projectUniqueName": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
         "projectName": "ReciclaFuturo",
-        "projectPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
-        "packagesPath": "C:\\Users\\ester\\.nuget\\packages\\",
-        "outputPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
+        "projectPath": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "packagesPath": "C:\\Users\\what_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ester\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\what_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.20.1, )"
