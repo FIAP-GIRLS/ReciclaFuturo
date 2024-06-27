@@ -25,28 +25,28 @@ namespace ReciclaFuturo.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult Create(MoradorModel moradorModel)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _moradorService.CreateMorador(moradorModel);
-        //        TempData["mensagemSucesso"] = $"O morador {moradorModel.Nome} foi cadastrado com sucesso";
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(moradorModel);
-        //}
+        [HttpPost]
+        public IActionResult Create(MoradorModel moradorModel)
+        {
+            if (ModelState.IsValid)
+            {
+                _moradorService.CreateMorador(moradorModel);
+                TempData["mensagemSucesso"] = $"O morador {moradorModel.Nome} foi cadastrado com sucesso";
+                return RedirectToAction(nameof(Index));
+            }
+            return View(moradorModel);
+        }
 
-        //[HttpGet]
-        //public IActionResult Detail(int id)
-        //{
-        //    var morador = _moradorService.GetMoradorById(id);
-        //    if (morador == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(morador);
-        //}
+        [HttpGet]
+        public IActionResult Detail(int id)
+        {
+            var morador = _moradorService.GetMoradorById(id);
+            if (morador == null)
+            {
+                return NotFound();
+            }
+            return View(morador);
+        }
 
         //[HttpGet]
         //public IActionResult Edit(int id)
