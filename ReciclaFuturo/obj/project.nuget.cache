@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ScxjiE5/RGM=",
+  "dgSpecHash": "MIqJY5aFM5M=",
   "success": true,
   "projectFilePath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ester\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -15,6 +16,7 @@
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.6\\microsoft.entityframeworkcore.design.8.0.6.nupkg.sha512",
+    "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\8.0.6\\microsoft.entityframeworkcore.proxies.8.0.6.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.6\\microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.6\\microsoft.entityframeworkcore.tools.8.0.6.nupkg.sha512",
     "C:\\Users\\ester\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
