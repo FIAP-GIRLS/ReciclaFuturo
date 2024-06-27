@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReciclaFuturo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc9c02dd8a061d0071491b8e894e898afbc304b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b6a04512380caa1c6c8780d68b52accf52bfd84")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReciclaFuturo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReciclaFuturo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
