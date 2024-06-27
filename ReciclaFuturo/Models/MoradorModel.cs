@@ -5,10 +5,13 @@
 
         public int MoradorId { get; set; }
         public string? Nome { get; set; }
-        public int cpf { get; set; }
-        public string? email { get; set; }
-        public string? senha { get; set; }
+        public int Cpf { get; set; }
+        public string? Email { get; set; }
+        public string? Senha { get; set; }
         public string? ContatoNr { get; set; }
+
+        public int EnderecoId { get; set; }
+        public EnderecoModel? Endereco { get; set; }
 
     }
 }

@@ -14,7 +14,6 @@ namespace ReciclaFuturo.Models
         public string? Estado { get; set; }
         public string? complemento { get; set; }
 
-        public int MoradorId { get; set; }
-        public MoradorModel? Morador { get; set; }
+
     }
 }
