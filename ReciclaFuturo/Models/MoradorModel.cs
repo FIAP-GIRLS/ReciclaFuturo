@@ -13,5 +13,7 @@
         public int EnderecoId { get; set; }
         public EnderecoModel? Endereco { get; set; }
 
+        public List<AgendamentoModel> Agendamentos { get; set; } = new List<AgendamentoModel>();
+
     }
 }
