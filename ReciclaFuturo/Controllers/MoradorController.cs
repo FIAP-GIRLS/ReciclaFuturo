@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using ReciclaFuturo.Data.Contexts;
 using ReciclaFuturo.Models;
-using ReciclaFuturo.Services;
 
 namespace ReciclaFuturo.Controllers
 {
