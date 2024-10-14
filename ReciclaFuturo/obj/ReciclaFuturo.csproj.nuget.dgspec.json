@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
+    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
+    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "projectUniqueName": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
         "projectName": "ReciclaFuturo",
-        "projectPath": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
-        "packagesPath": "C:\\Users\\what_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\what_\\source\\repos\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
+        "projectPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "packagesPath": "C:\\Users\\ester\\.nuget\\packages\\",
+        "outputPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\what_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ester\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
