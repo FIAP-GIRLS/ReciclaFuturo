@@ -13,7 +13,7 @@ namespace ReciclaFuturo.Models
 
         [Required(ErrorMessage = "CPF é obrigatório")]
         [RegularExpression(@"\d{11}", ErrorMessage = "CPF deve ter 11 dígitos")]
-        public int Cpf { get; set; }
+        public string Cpf { get; set; }
 
         [Required(ErrorMessage = "Email é obrigatório")]
         [EmailAddress(ErrorMessage = "Email inválido")]

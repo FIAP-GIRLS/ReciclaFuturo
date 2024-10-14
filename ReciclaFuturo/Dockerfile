@@ -11,14 +11,14 @@ WORKDIR /src
 COPY ["ReciclaFuturo.csproj", "."]
 RUN dotnet restore "./ReciclaFuturo.csproj"
 COPY . .
-WORKDIR "/src/."
+#WORKDIR "/src/."
 RUN dotnet build "./ReciclaFuturo.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./ReciclaFuturo.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ReciclaFuturo.dll"]

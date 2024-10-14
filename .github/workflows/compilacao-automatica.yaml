@@ -1,0 +1,29 @@
+name: Compilacao Automatica
+
+on:
+  push:
+    branches:
+      - feature/continuosintegration  # Executa o workflow quando houver push nesta branch
+      - develop  # Ou em develop
+  pull_request:
+    branches:
+      - develop  # Executa o workflow em pull requests para develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Executa em um ambiente Ubuntu
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Faz o checkout do código
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1  # Configura a versão do .NET
+      with:
+        dotnet-version: '8.0.x'  # Versão do .NET está usando
+
+    - name: Restore dependencies
+      run: dotnet restore  # Restaure as dependências do projeto
+
+    - name: Build
+      run: dotnet build --configuration Release  # Compila o projeto em modo Release

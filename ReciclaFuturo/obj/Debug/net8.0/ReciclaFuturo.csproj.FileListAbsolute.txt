@@ -228,3 +228,9 @@ C:\Users\what_\source\repos\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\refint\
 C:\Users\what_\source\repos\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\ReciclaFuturo.pdb
 C:\Users\what_\source\repos\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\ReciclaFuturo.genruntimeconfig.cache
 C:\Users\what_\source\repos\ReciclaFuturo\ReciclaFuturo\obj\Debug\net8.0\ref\ReciclaFuturo.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+S:\Dev\ReciclaFuturo\ReciclaFuturo\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
