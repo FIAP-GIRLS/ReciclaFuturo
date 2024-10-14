@@ -26,4 +26,4 @@ jobs:
       run: dotnet restore ReciclaFuturo/ReciclaFuturo.csproj # Restaure as dependências do projeto
 
     - name: Build
-      run: dotnet build --configuration Release  # Compila o projeto em modo Release
+      run: dotnet build ReciclaFuturo/ReciclaFuturo.csproj --configuration Release  # Compila o projeto em modo Release
