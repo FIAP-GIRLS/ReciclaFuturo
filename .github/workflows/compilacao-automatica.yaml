@@ -23,7 +23,7 @@ jobs:
         dotnet-version: '8.0.x'  # Versão do .NET está usando
 
     - name: Restore dependencies
-      run: dotnet restore  # Restaure as dependências do projeto
+      run: dotnet restore ReciclaFuturo/ReciclaFuturo.csproj # Restaure as dependências do projeto
 
     - name: Build
       run: dotnet build --configuration Release  # Compila o projeto em modo Release
