@@ -3,7 +3,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturo
 on:
   push:
     branches:
-      - Develop
+      - develop
   workflow_dispatch:
 
 jobs:
@@ -22,13 +22,13 @@ jobs:
         run: dotnet build ReciclaFuturo/ReciclaFuturo.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: myapp
 
   deploy:
     runs-on: windows-latest
@@ -58,4 +58,4 @@ jobs:
         with:
           app-name: 'reciclafuturo'
           slot-name: 'production'
-          package: ${{env.DOTNET_ROOT}}/myapp
+          package: myapp
