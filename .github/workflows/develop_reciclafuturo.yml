@@ -3,7 +3,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturo
 on:
   push:
     branches:
-      - Develop
+      - develop
   workflow_dispatch:
 
 jobs:
