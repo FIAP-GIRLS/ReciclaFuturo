@@ -25,7 +25,11 @@ jobs:
         run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o myapp
 
       - name: Zip the application
-        run: zip -r myapp.zip myapp  # Compacta o diretório 'myapp' em 'myapp.zip'
+        run: |
+          $zipfile = "myapp.zip"
+          if (Test-Path $zipfile) { Remove-Item $zipfile }
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          [IO.Compression.ZipFile]::CreateFromDirectory("myapp", $zipfile)
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
