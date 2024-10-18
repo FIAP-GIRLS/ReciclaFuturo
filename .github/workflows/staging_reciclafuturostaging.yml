@@ -24,11 +24,16 @@ jobs:
       - name: dotnet publish
         run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o myapp
 
+      - name: Create zip package
+        run: |
+          cd myapp
+          powershell -command "Compress-Archive -Path * -DestinationPath ../myapp.zip"
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: myapp
+          path: myapp.zip
 
   deploy:
     runs-on: windows-latest
