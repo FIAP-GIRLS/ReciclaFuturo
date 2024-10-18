@@ -3,7 +3,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturo
 on:
   push:
     branches:
-      - Develop
+      - Develop  # Nome da branch corrigido
   workflow_dispatch:
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write
+      id-token: write # This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
