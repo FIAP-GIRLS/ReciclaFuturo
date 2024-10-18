@@ -37,18 +37,13 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write  # Isso é necessário para a autenticação de identidade gerenciada
+      id-token: write
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
-      - name: Login to Azure with Managed Identity
-        uses: azure/login@v2
-        with:
-          managed-identity-client-id: bddc8f02-d1bc-494a-ab40-0b57efa868b2  # Use o Object ID da Identidade Gerenciada
   
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
