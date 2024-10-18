@@ -45,17 +45,11 @@ jobs:
         with:
           name: .net-app
 
-      - name: Check secrets
-        run: echo ${{ secrets.AZUREAPPSERVICE_SECRET }}
-      
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          creds: ${{ secrets.AZUREAPPSERVICE_SECRET }}
-  
+          creds: ${{ secrets.AZURE_CREDENTIALS }}  # Atualize para usar o novo segredo
+     
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
