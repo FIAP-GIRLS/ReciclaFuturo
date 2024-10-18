@@ -1,12 +1,9 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturostaging
+name: Build and deploy ASP.Net Core app to Azure Web App - ReciclaFuturo Staging
 
 on:
   push:
     branches:
-      - staging
+      - staging  # Esta é a branch de staging
   workflow_dispatch:
 
 jobs:
@@ -22,44 +19,41 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ReciclaFuturo/ReciclaFuturo.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: myapp
 
   deploy:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'Staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
+      id-token: write # Isso é necessário para solicitar o JWT
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_48D40BB0521144209EB77F51EF554AD2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8D18B1C09FCE48418C4A2B38AC843E9D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3B11CA06CDBC41DE9954960BEBBFF6FF }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}  
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'reciclafuturostaging'
-          slot-name: 'Production'
-          package: .
-          
+          app-name: 'reciclafuturo-staging'  # Use o nome do seu aplicativo para o ambiente de staging
+          slot-name: 'staging'  # Nome do slot, se aplicável
+          package: myapp.zip  # Pacote que você compactou anteriormente
