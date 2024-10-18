@@ -1,9 +1,9 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - ReciclaFuturo Staging
+name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturo-staging
 
 on:
   push:
     branches:
-      - staging  # Esta é a branch de staging
+      - staging  # Branch para staging
   workflow_dispatch:
 
 jobs:
@@ -34,10 +34,10 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Staging'
+      name: 'Staging'  # Nome do ambiente de staging
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # Isso é necessário para solicitar o JWT
+      id-token: write # This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
@@ -54,6 +54,5 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'reciclafuturo-staging'  # Use o nome do seu aplicativo para o ambiente de staging
-          slot-name: 'staging'  # Nome do slot, se aplicável
-          package: myapp.zip  # Pacote que você compactou anteriormente
+          app-name: 'reciclafuturo'  # Nome do seu app
+          package: myapp.zip  # O pacote a ser implantado
