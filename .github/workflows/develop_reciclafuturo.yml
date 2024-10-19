@@ -1,0 +1,66 @@
+name: Build and deploy ASP.Net Core app to Azure Web App - reciclafuturo
+
+on:
+  push:
+    branches:
+      - Develop  # Nome da branch corrigido
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Build with dotnet
+        run: dotnet build ReciclaFuturo/ReciclaFuturo.csproj --configuration Release
+
+      - name: dotnet publish
+        run: dotnet publish ReciclaFuturo/ReciclaFuturo.csproj -c Release -o myapp
+
+      - name: Zip the application
+        run: |
+          $zipfile = "myapp.zip"
+          if (Test-Path $zipfile) { Remove-Item $zipfile }
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          [IO.Compression.ZipFile]::CreateFromDirectory("myapp", $zipfile)
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4
+        with:
+          name: .net-app
+          path: myapp.zip  # Altere para o arquivo zip
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    permissions:
+      id-token: write # This is required for requesting the JWT
+
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: .net-app
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}  
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'reciclafuturo'
+          slot-name: 'production'
+          package: myapp.zip  # O pacote zip que acabamos de criar
