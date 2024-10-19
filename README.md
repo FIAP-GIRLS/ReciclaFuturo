@@ -166,7 +166,7 @@ Certifique-se de que os seguintes itens estejam instalados em sua máquina antes
     docker system prune -a --volumes
     ```
 
-## Estrutura de Pastas do Projeto
+## Estrutura de Pastas do Projeto 
 
 ```bash
 ├── src/
