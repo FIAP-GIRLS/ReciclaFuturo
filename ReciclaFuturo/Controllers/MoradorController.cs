@@ -1,100 +1,135 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using ReciclaFuturo.Data.Contexts;
 using ReciclaFuturo.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ReciclaFuturo.Controllers
 {
-    public class MoradorController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class MoradorController : ControllerBase
     {
         private readonly DatabaseContext _context;
+        private readonly ILogger<MoradorController> _logger;
 
-        public MoradorController(DatabaseContext context)
+        public MoradorController(DatabaseContext context, ILogger<MoradorController> logger)
         {
             _context = context;
-        }
-
-        public IActionResult Index()
-        {
-            var moradores = _context.Morador.Include(m => m.Endereco).ToList();
-            return View(moradores);
+            _logger = logger;
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public async Task<ActionResult<IEnumerable<MoradorModel>>> GetMoradores()
         {
-            return View();
+            return await _context.Morador.Include(m => m.Endereco).ToListAsync();
         }
 
-        [HttpPost]
-        public IActionResult Create(MoradorModel moradorModel)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<MoradorModel>> GetMorador(int id)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Morador.Add(moradorModel);
-                _context.SaveChanges();
-                TempData["mensagemSucesso"] = $"O morador {moradorModel.Nome} foi cadastrado com sucesso";
-                return RedirectToAction(nameof(Index));
-            }
-            return View(moradorModel);
-        }
-
-        [HttpGet]
-        public IActionResult Detail(int id)
-        {
-            var morador = _context.Morador
-                                .Include(m => m.Endereco)
-                                .FirstOrDefault(m => m.MoradorId == id);
+            var morador = await _context.Morador.Include(m => m.Endereco).FirstOrDefaultAsync(m => m.MoradorId == id);
 
             if (morador == null)
             {
                 return NotFound();
             }
 
-            return View(morador);
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var morador = _context.Morador
-                      .Include(m => m.Endereco)
-                      .FirstOrDefault(m => m.MoradorId == id);
-            if (morador == null)
-            {
-                return NotFound();
-            }
-            return View(morador);
+            return morador;
         }
 
         [HttpPost]
-        public IActionResult Edit(MoradorModel moradorModel)
+        public async Task<IActionResult> CreateMorador([FromBody] MoradorModel morador)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _context.Update(moradorModel);
-                _context.SaveChanges();
-                TempData["mensagemSucesso"] = $"Os dados do morador {moradorModel.Nome} foram alterados com sucesso";
-                return RedirectToAction(nameof(Index));
+                return BadRequest(ModelState);
             }
-            return View(moradorModel);
+
+            if (morador.Endereco == null)
+            {
+                return BadRequest("Endereço não pode ser nulo.");
+            }
+
+            if (string.IsNullOrWhiteSpace(morador.Endereco.NomeEndereco))
+            {
+                return BadRequest("Nome do Endereço é obrigatório.");
+            }
+
+            await _context.Morador.AddAsync(morador);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetMorador), new { id = morador.MoradorId }, morador);
         }
 
-        [HttpGet]
-        public IActionResult Delete(int id)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateMorador(int id, [FromBody] MoradorModel morador)
         {
-            var morador = _context.Morador.Find(id);
-            if (morador != null)
+            if (morador == null)
             {
-                _context.Morador.Remove(morador);
-                _context.SaveChanges();
-                TempData["mensagemSucesso"] = $"Os dados do morador {morador.Nome} foram removidos com sucesso";
+                return BadRequest("Os dados do morador são obrigatórios.");
+            }
+
+            if (id != morador.MoradorId)
+            {
+                return BadRequest("O ID fornecido não corresponde ao ID do morador.");
+            }
+
+            var moradorExistente = await _context.Morador.Include(m => m.Endereco).FirstOrDefaultAsync(m => m.MoradorId == id);
+            if (moradorExistente == null)
+            {
+                return NotFound();
+            }
+
+            moradorExistente.Nome = morador.Nome;
+            moradorExistente.Cpf = morador.Cpf;
+            moradorExistente.Email = morador.Email;
+            moradorExistente.Senha = morador.Senha;
+            moradorExistente.ContatoNr = morador.ContatoNr;
+
+            if (moradorExistente.Endereco != null)
+            {
+                moradorExistente.Endereco.NomeEndereco = morador.Endereco.NomeEndereco;
+                moradorExistente.Endereco.NumeroEndereco = morador.Endereco.NumeroEndereco;
+                moradorExistente.Endereco.Bairro = morador.Endereco.Bairro;
+                moradorExistente.Endereco.Cep = morador.Endereco.Cep;
+                moradorExistente.Endereco.Cidade = morador.Endereco.Cidade;
+                moradorExistente.Endereco.Estado = morador.Endereco.Estado;
             }
             else
             {
-                TempData["mensagemSucesso"] = "OPS !!! Morador inexistente.";
+                moradorExistente.Endereco = morador.Endereco;
             }
-            return RedirectToAction(nameof(Index));
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+
+
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMorador(int id)
+        {
+            var morador = await _context.Morador.FindAsync(id);
+            if (morador == null)
+            {
+                return NotFound();
+            }
+
+            _context.Morador.Remove(morador);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool MoradorExists(int id)
+        {
+            return _context.Morador.Any(e => e.MoradorId == id);
         }
     }
 }

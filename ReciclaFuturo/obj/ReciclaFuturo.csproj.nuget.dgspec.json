@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
+    "C:\\Users\\Giulianna Oliveira\\Documents\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {}
   },
   "projects": {
-    "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
+    "C:\\Users\\Giulianna Oliveira\\Documents\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "projectUniqueName": "C:\\Users\\Giulianna Oliveira\\Documents\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
         "projectName": "ReciclaFuturo",
-        "projectPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
-        "packagesPath": "C:\\Users\\ester\\.nuget\\packages\\",
-        "outputPath": "S:\\Dev\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
+        "projectPath": "C:\\Users\\Giulianna Oliveira\\Documents\\ReciclaFuturo\\ReciclaFuturo\\ReciclaFuturo.csproj",
+        "packagesPath": "C:\\Users\\Giulianna Oliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Giulianna Oliveira\\Documents\\ReciclaFuturo\\ReciclaFuturo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ester\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Giulianna Oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -94,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
