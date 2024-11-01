@@ -9,59 +9,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ReciclaFuturo
 build_property.RootNamespace = ReciclaFuturo
-build_property.ProjectDir = S:\Dev\ReciclaFuturo\ReciclaFuturo\
+build_property.ProjectDir = C:\Users\Giulianna Oliveira\Documents\ReciclaFuturo\ReciclaFuturo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = S:\Dev\ReciclaFuturo\ReciclaFuturo
+build_property.MSBuildProjectDirectory = C:\Users\Giulianna Oliveira\Documents\ReciclaFuturo\ReciclaFuturo
 build_property._RazorSourceGeneratorDebug = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Home/Index.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Home/Privacy.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Morador/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9yYWRvclxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Morador/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9yYWRvclxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Morador/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9yYWRvclxEZXRhaWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Morador/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9yYWRvclxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Morador/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9yYWRvclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Shared/Error.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/_ViewImports.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/_ViewStart.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[S:/Dev/ReciclaFuturo/ReciclaFuturo/Views/Shared/_Layout.cshtml]
+[C:/Users/Giulianna Oliveira/Documents/ReciclaFuturo/ReciclaFuturo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ziiqqixaje
